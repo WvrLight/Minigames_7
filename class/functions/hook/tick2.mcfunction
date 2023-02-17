@@ -1,1 +1,2 @@
 execute as @a[tag=onHook] at @s unless data entity @s RootVehicle run function class:hook/end
+execute as @a[tag=postHook] at @s unless data entity @s RootVehicle run ride @s mount @e[tag=hookEndDummy,limit=1,sort=nearest]
