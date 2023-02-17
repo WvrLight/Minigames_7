@@ -1,0 +1,1 @@
+execute as @a[tag=onLeap] at @s unless data entity @s RootVehicle run ride @s mount @e[tag=leapDummy,limit=1,sort=nearest]

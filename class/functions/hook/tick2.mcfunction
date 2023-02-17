@@ -1,0 +1,1 @@
+execute as @a[tag=onHook] at @s unless data entity @s RootVehicle run function class:hook/end
