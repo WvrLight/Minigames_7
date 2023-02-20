@@ -1,0 +1,54 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{hook:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "skillId": 0
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"Flame Dash\",\"color\":\"red\",\"bold\":true}',Lore:['{\"text\":\"Movement\",\"color\":\"dark_gray\"}','{\"text\":\"\"}','{\"text\":\"Leaps a great distance into the target direction.\",\"color\":\"gray\"}','{\"text\":\"\",\"color\":\"gray\"}','{\"text\":\"Can be used during the channeling of Annihilating Flame and Ashfall.\",\"color\":\"dark_gray\",\"bold\":false,\"italic\":true}','{\"text\":\"\"}','{\"text\":\"When used during the effect of Annihilating Flame, the effect of\",\"color\":\"dark_gray\",\"bold\":false,\"italic\":true}','{\"text\":\"Annihilating Flame is canceled.\",\"color\":\"dark_gray\",\"bold\":false,\"italic\":true}','{\"text\":\"\"}','[{\"text\":\"Cooldown: \",\"color\":\"light_purple\",\"bold\":true},{\"text\":\"4\",\"color\":\"white\",\"bold\":false}]']},leap:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "skillId": 1
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"Ashfall\",\"color\":\"red\",\"bold\":true}',Lore:['{\"text\":\"Channeling, Movement, Damage\",\"color\":\"dark_gray\"}','{\"text\":\"\"}','{\"text\":\"Levitates into the air and powers up before\",\"color\":\"gray\"}','{\"text\":\"slamming into the ground, damaging and slowing\",\"color\":\"gray\"}','{\"text\":\"enemies caught in the area. Deals higher damage\",\"color\":\"gray\"}','{\"text\":\"when hitting enemies close to the center.\",\"color\":\"gray\"}','{\"text\":\"\"}','{\"text\":\"When cast mid-air, the levitation effect will not occur.\",\"color\":\"dark_gray\",\"bold\":false,\"italic\":true}','{\"text\":\"\"}','[{\"text\":\"Max Damage: \",\"color\":\"gold\",\"bold\":true},{\"text\":\"6\",\"color\":\"white\",\"bold\":false}]','[{\"text\":\"Channeling Time: \",\"color\":\"blue\",\"bold\":true},{\"text\":\"1.2\",\"color\":\"white\",\"bold\":false}]','[{\"text\":\"Max Slow: \",\"color\":\"green\",\"bold\":true},{\"text\":\"90%\",\"color\":\"white\",\"bold\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"light_purple\",\"bold\":true},{\"text\":\"7\",\"color\":\"white\",\"bold\":false}]']},slam:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "skillId": 2
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"Annihilating Flame\",\"color\":\"red\",\"bold\":true}',Lore:['{\"text\":\"Channeling, Damage\",\"color\":\"dark_gray\"}','{\"text\":\"\"}','{\"text\":\"Channels for a short duration before performing\",\"color\":\"gray\"}','{\"text\":\"a flurry of strikes in front for several seconds, \",\"color\":\"gray\"}','{\"text\":\"continuously damaging enemies hit by each strike.\",\"color\":\"gray\"}','{\"text\":\"\"}','[{\"text\":\"Damage per Strike: \",\"color\":\"gold\",\"bold\":true},{\"text\":\"4\",\"color\":\"white\",\"bold\":false}]','[{\"text\":\"Channeling Time: \",\"color\":\"blue\",\"bold\":true},{\"text\":\"1.7\",\"color\":\"white\",\"bold\":false}]','[{\"text\":\"Duration: \",\"color\":\"aqua\",\"bold\":true},{\"text\":\"2\",\"color\":\"white\",\"bold\":false}]','[{\"text\":\"Cooldown: \",\"color\":\"light_purple\",\"bold\":true},{\"text\":\"15\",\"color\":\"white\",\"bold\":false}]']},flurry:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "skillId": 3
+        }
+      }
+    ]
+  }
+]
