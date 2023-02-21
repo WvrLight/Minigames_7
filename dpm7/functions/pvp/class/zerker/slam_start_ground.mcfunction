@@ -1,3 +1,4 @@
+# Status
 effect give @p levitation 1 32 true
 
 # Effects

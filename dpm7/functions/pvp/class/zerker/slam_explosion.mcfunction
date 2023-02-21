@@ -14,8 +14,7 @@ execute at @s run particle dust 0.6 0.4 0.1 2.0 ~ ~0.5 ~ 1.5 0.5 1.5 0 20
 execute at @s run particle dust 1.0 0.3 0.1 2.0 ~ ~0.5 ~ 1.5 0.5 1.5 0 20
 execute at @s run particle lava ~ ~0.5 ~ 1.5 0.5 1.5 0 50
 execute at @s run particle large_smoke ~ ~0.5 ~ 1.5 0.5 1.5 0 50
-execute at @s run particle minecraft:explosion ~ ~ ~ 0.75 0.2 0.75 1 5 normal
-
+execute at @s run particle explosion ~ ~ ~ 0.75 0.2 0.75 1 5 normal
 execute at @s run playsound entity.generic.explode master @a ~ ~ ~ 3 1
 
 tag @s remove onSlamStart

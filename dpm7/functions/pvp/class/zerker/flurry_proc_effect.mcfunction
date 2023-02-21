@@ -1,6 +1,6 @@
 execute positioned ^ ^ ^3.5 as @e[tag=!onFlurryEffect, distance=..3.5] run damage @s 4 player_attack by @p[tag=onFlurryEffect]
 
-# Particle effect
+# Effects
 particle flame ^ ^ ^-0.5 0.05 0.05 0.05 0 5 force
 particle flame ^ ^ ^0.5 0.05 0.05 0.05 0 5 force
 particle flame ^ ^ ^1.5 0.05 0.05 0.05 0 5 force

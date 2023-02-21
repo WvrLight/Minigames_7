@@ -1,11 +1,7 @@
 # Store temp id
 scoreboard players operation #temp id = @s id
 
-# Store entity position
-#execute as @e[tag=hook] store result score @s posX run data get entity @s Pos[0] 100
-#execute as @e[tag=hook] store result score @s posY run data get entity @s Pos[1] 1000
-#execute as @e[tag=hook] store result score @s posZ run data get entity @s Pos[2] 100
-
+# Store motion dummy position and motion
 execute store result score @s posX run data get entity @s Pos[0] 100
 execute store result score @s posY run data get entity @s Pos[1] 100
 execute store result score @s posZ run data get entity @s Pos[2] 100
@@ -15,7 +11,6 @@ execute store result score @s motionY run data get entity @s Motion[1] 10000
 execute store result score @s motionZ run data get entity @s Motion[2] 10000
 
 # Apply pull force towards hook origin
-
 execute as @e[tag=hookDummy] if score @s id = #temp id run tag @s add targetHook
 scoreboard players operation #temp posX = @e[tag=targetHook,limit=1] posX
 scoreboard players operation #temp posY = @e[tag=targetHook,limit=1] posY
@@ -24,32 +19,30 @@ scoreboard players operation #temp posX -= @s posX
 scoreboard players operation #temp posY -= @s posY
 scoreboard players operation #temp posZ -= @s posZ
 
+# Apply additional tension force
 scoreboard players operation #temp posY *= #hookTensionMulti motionY
 
-# Apply tension force
-scoreboard players set @s raycast 0
-
-execute at @s anchored eyes facing entity @e[tag=targetHook] feet positioned ^ ^ ^1 run function dpm7:pvp/class/scout/hook_raycast
-
-# scoreboard players operation tension motionY = @s raycast
-
-# Apply sum of forces
+# Modify motion based on rope force
 scoreboard players operation @s motionX += #temp posX
 scoreboard players operation @s motionY += #temp posY
 scoreboard players operation @s motionZ += #temp posZ
 
 tag @e[tag=targetHook] remove targetHook
 
-# Apply pull force towards direction
-execute if score @s tick matches 1.. run function dpm7:pvp/class/scout/apply_physics_directional
-
-# Apply gravity force
+# Apply additional gravity force
 scoreboard players operation @s motionY -= #gravity motionY
+
+# Apply additional pull force towards direction within the set duration
+execute if score @s tick matches 1.. run function dpm7:pvp/class/scout/apply_physics_directional
 
 # Store new motion
 execute store result entity @s Motion[0] double 0.000105 run scoreboard players get @s motionX
 execute store result entity @s Motion[1] double 0.0000975 run scoreboard players get @s motionY
 execute store result entity @s Motion[2] double 0.000105 run scoreboard players get @s motionZ
+
+# Raycast visual effect
+scoreboard players set @s raycast 0
+execute at @s anchored eyes facing entity @e[tag=targetHook] feet positioned ^ ^ ^1 run function dpm7:pvp/class/scout/hook_raycast
 
 scoreboard players reset #temp posX
 scoreboard players reset #temp posY

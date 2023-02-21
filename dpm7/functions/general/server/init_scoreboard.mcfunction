@@ -7,11 +7,12 @@ execute unless score $playerCount id matches 0.. run scoreboard players set $pla
 # Right click detection
 scoreboard objectives add rightClick minecraft.used:minecraft.carrot_on_a_stick
 
-# Used for tick scheduling and timers
+# Tick scheduling and timers
 scoreboard objectives add tick dummy
 
-# Used for general counters
+# Counter variables
 scoreboard objectives add counter dummy
+scoreboard objectives add raycast dummy
 
 # Position and motion storage
 scoreboard objectives add posX dummy
@@ -21,9 +22,6 @@ scoreboard objectives add posZ dummy
 scoreboard objectives add motionX dummy
 scoreboard objectives add motionY dummy
 scoreboard objectives add motionZ dummy
-
-# Used for raycast recursion counter
-scoreboard objectives add raycast dummy
 
 # Integers for scoreboard operations
 scoreboard objectives add integers dummy

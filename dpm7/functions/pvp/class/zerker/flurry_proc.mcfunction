@@ -1,3 +1,4 @@
+# Increment and reset timer
 scoreboard players add @s counter 1
 scoreboard players set @s tick 2
 

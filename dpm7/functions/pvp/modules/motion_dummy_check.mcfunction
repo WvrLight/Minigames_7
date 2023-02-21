@@ -1,5 +1,6 @@
 # Check if motion dummy is not moving horizontally
 # For destroying motion dummy once player hits the ground or a wall
+
 execute store result score @s motionX run data get entity @s Motion[0] 10000
 execute store result score @s motionZ run data get entity @s Motion[2] 10000
 

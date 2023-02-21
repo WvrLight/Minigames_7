@@ -1,3 +1,5 @@
+# Used only for re-generating M_7 spawn statues
+
 kill @e[tag=spawnStatue]
 
 summon armor_stand -1.5 67 -34.5 {Invulnerable:1b,ShowArms:1b,DisabledSlots:4144959,Tags:["spawnStatue","statueLight"],NoBasePlate:1b,ShowArms:1b,ArmorItems:[{id:"minecraft:netherite_boots",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:eye"}}},{id:"minecraft:netherite_leggings",Count:1b,tag:{Trim:{material:"minecraft:gold",pattern:"minecraft:tide"}}},{id:"minecraft:netherite_chestplate",Count:1b,tag:{Trim:{material:"minecraft:diamond",pattern:"minecraft:ward"}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"WvrLight"}}],Pose:{Head:[8f,0f,0f],LeftLeg:[0f,0f,355f],RightLeg:[0f,0f,5f],LeftArm:[290f,35f,0f],RightArm:[70f,160f,0f]}}

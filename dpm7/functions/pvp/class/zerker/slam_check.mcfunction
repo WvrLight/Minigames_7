@@ -1,3 +1,6 @@
+# Checks current state of player
+# Handles slam skill interactions between zerker skills
+
 scoreboard players set @s rightClick 0
 
 execute if entity @s[tag=!onLeap, tag=!onFlurryChannel, tag=!onFlurryEffect] run function dpm7:pvp/class/zerker/slam_start

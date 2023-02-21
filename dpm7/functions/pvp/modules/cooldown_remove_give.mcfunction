@@ -1,7 +1,9 @@
-# List of all skill items and their respective IDs
+# For list of item data and skill IDs, refer to item_modifiers/change_skill.json
+
 scoreboard players operation @s slot = #temp slot
 scoreboard players operation @s skillId = #temp skillId
 
+# Slot detection
 execute if score @s slot matches 0 run item replace entity @s hotbar.0 with carrot_on_a_stick{newItem:1} 1
 execute if score @s slot matches 1 run item replace entity @s hotbar.1 with carrot_on_a_stick{newItem:1} 1
 execute if score @s slot matches 2 run item replace entity @s hotbar.2 with carrot_on_a_stick{newItem:1} 1
@@ -12,6 +14,7 @@ execute if score @s slot matches 6 run item replace entity @s hotbar.6 with carr
 execute if score @s slot matches 7 run item replace entity @s hotbar.7 with carrot_on_a_stick{newItem:1} 1
 execute if score @s slot matches 8 run item replace entity @s hotbar.8 with carrot_on_a_stick{newItem:1} 1
 
+# Determine skill data of slot
 execute if score @s slot matches 0 run item modify entity @s hotbar.0 dpm7:change_skill
 execute if score @s slot matches 1 run item modify entity @s hotbar.1 dpm7:change_skill
 execute if score @s slot matches 2 run item modify entity @s hotbar.2 dpm7:change_skill

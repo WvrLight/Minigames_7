@@ -10,6 +10,6 @@ execute if score @s slot matches 6 run item replace entity @s hotbar.6 with cyan
 execute if score @s slot matches 7 run item replace entity @s hotbar.7 with light_blue_stained_glass_pane{display:{Name:'{"text":"Cooldown","color":"blue","bold":true}'},cooldown:1} 1
 execute if score @s slot matches 8 run item replace entity @s hotbar.8 with blue_stained_glass_pane{display:{Name:'{"text":"Cooldown","color":"dark_blue","bold":true}'},cooldown:1} 1
 
-scoreboard players operation @s cooldown /= #20 integers
+scoreboard players operation @s cooldown /= #10 integers
 scoreboard players remove @s cooldown 1
 function dpm7:pvp/modules/cooldown_give_count

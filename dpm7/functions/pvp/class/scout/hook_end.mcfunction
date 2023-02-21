@@ -1,5 +1,8 @@
 
+# Store temp id
 scoreboard players operation #temp id = @s id
+
+# Kill hook dummy
 execute as @e[tag=hookDummy] if score @s id = #temp id at @s run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 2 1.5
 execute as @e[tag=hookDummy] if score @s id = #temp id run kill @s
 #execute as @e[tag=motionDummy] if score @s id = #temp id run kill @s
