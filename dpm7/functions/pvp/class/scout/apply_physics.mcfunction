@@ -42,7 +42,7 @@ execute store result entity @s Motion[2] double 0.000105 run scoreboard players 
 
 # Raycast visual effect
 scoreboard players set @s raycast 0
-execute at @s anchored eyes facing entity @e[tag=targetHook] feet positioned ^ ^ ^1 run function dpm7:pvp/class/scout/hook_raycast
+execute at @s anchored eyes facing entity @e[tag=hookDummy] feet positioned ^ ^ ^1 run function dpm7:pvp/class/scout/hook_raycast
 
 scoreboard players reset #temp posX
 scoreboard players reset #temp posY

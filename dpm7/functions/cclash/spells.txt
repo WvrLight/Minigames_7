@@ -1,0 +1,144 @@
+Singvus - Earth, Tepidity, Matter - 5
+
+Douzol - Wind, Cold, Energy - 13
+
+Trixios - Flame, Heat, Force - 23
+
+Conjure
+
+Spells:
+
+S - Manipulate Earth - 5
+D - Frostball - 13
+T - Pyroball - 23
+
+SS - Rolling Boulder - 10
+DD - Flight - 26
+TT - Flame Flash - 46
+
+SD - Exhiliration - 18
+DT - Sonic - 36
+TS - Armor of Earth - 28
+
+SSS - Earthquake - 15
+DDD - Freezing Beam - 39
+TTT - Strike of Lightning - 69
+
+SSD - Ice Spikes - 23
+DDT - Glacier Mend - 49
+TTS - Meteor - 51
+
+SST - Split Earth - 33
+DDS - Prison of Ice - 31
+TTD - Magma Floor - 59
+
+SDT - Arctic Erruption - 41
+
+----------------------------------------------------------------------------
+Conjurer Clash 1.3 Balance Update
+Armor of Earth
+-Now Mitigates explosion damage (Meteor/Arctic Erruption)
+
+Strike of Lightning
+-All strike arm time reduced by .5 seconds (now strikes .5 seconds earlier)
+
+Ices Spikes
+-Spike toss time in air increased by 10%
+
+Glacier Mend
+-Cooldown increased by 1 second (now 15 seconds)
+
+Prison of Ice
+-Any players inside prison of ice can no longer cast spells
+-Interrupts/dispels any movement abilities (stops flight and sonic if any duration is left)
+
+Magma Floor
+-Cooldown reduced by 1 second (now  11 seconds)
+-Casting player fire resistance duration increased by 1 (now 5 seconds)
+
+Conjurer Clash 1.2 Balance Update
+
+Frost Ball
+-Disarms the player hit for 3 seconds
+-Projectile speed reduced by 20% (was the same as Pyroball, now less)
+
+Pyroball
+-Fixed bug where it would hit you on cast
+-Reduced visual particles by 20%
+
+Exhiliration
+-Conjure cooldown increased from 8 to 10
+
+Armor of Earth
+-Now deals damage to attackers for the duration
+-Now has visual armor of Earth Chestplate
+
+Earthquake
+-Arming time reduced from 3 seconds to 1.5 seconds
+-Shaking is now more violent, tosses you in the air, and deals damage every shake when you land, but only tosses you if you are on the ground
+
+Freezing Beam
+-Fixed bug where the start would freeze but deal no damage and the start would deal damage but not freeze
+
+Split Earth
+-Line pull radius increased by 0.2 (spiked area pull radius unchanged)
+
+Prison of Ice
+-Prison duration increased from 4 seconds to 5 seconds.
+
+Magma Floor
+-Now deals slowness 2 for 4 seconds on initial contact
+
+
+----------------------------------------------------------------------------
+
+Conjurer Clash 1.1 Balance Update 
+
+Frostball
+-Hitbox increased by 0.3 blocks
+-Moves slightly faster
+-Travels slightly farther
+
+Pyroball
+-Moves slightly slower
+
+Rolling Boulder
+-Less likely to go inside blocks
+
+Flight
+-Conjure cooldown increased from 8 to 9
+
+Sonic
+-Now grants Slow falling for the duration
+
+Armor of Earth
+-Slowness drastically reduced
+-Now grants 100% knockback resistance for the duration
+
+Earthquake
+-Radius increased by 2 blocks
+-Grants Slowness I in area of effect
+
+Ice Spikes
+-Will now stop tossing if u hit a block above
+
+Meteor
+-Redirected meteors now travel at half speed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
