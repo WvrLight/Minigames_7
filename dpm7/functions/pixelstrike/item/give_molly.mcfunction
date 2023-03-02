@@ -1,0 +1,5 @@
+execute if entity @s[nbt={Inventory:[{Slot:2b}]}] if entity @s[nbt={Inventory:[{Slot:3b}]}] run item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"Molotov","color":"red","bold":true}',Lore:['{"text":"Sets the hit area on fire.","color":"gray"}']},HideFlags:4,Unbreakable:1b,psNade:1,psMolly:1,CustomModelData:852} 1
+
+execute if entity @s[nbt={Inventory:[{Slot:2b}]}] unless entity @s[nbt={Inventory:[{Slot:3b}]}] run item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Molotov","color":"red","bold":true}',Lore:['{"text":"Sets the hit area on fire.","color":"gray"}']},HideFlags:4,Unbreakable:1b,psNade:1,psMolly:1,CustomModelData:852} 1
+
+execute unless entity @s[nbt={Inventory:[{Slot:2b}]}] run item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Molotov","color":"red","bold":true}',Lore:['{"text":"Sets the hit area on fire.","color":"gray"}']},HideFlags:4,Unbreakable:1b,psNade:1,psMolly:1,CustomModelData:852} 1

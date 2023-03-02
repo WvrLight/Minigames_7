@@ -1,6 +1,6 @@
-# Skill cooldown details
+# rightClick cooldown details
 scoreboard players set @s cooldown 15
-scoreboard players set @s skillId 3
+scoreboard players set @s rightClickId 3
 scoreboard players set @s tick 34
 clear @s carrot_on_a_stick{flurry:1}
 execute at @s run function dpm7:pvp/modules/cooldown_dummy

@@ -3,7 +3,8 @@ scoreboard players remove @s tick 1
 execute if block ^ ^ ^ air run tp @s ^ ^ ^1 
 #function dpm7:pvp/class/harbinger/levelabove
 function dpm7:pvp/class/harbinger/levelbelow
-particle dust 0.000 0.000 0.000 1 ~ ~0.3 ~ 0.7 0.3 0.7 0 100 normal
+particle dust 0.005 0.1 0.15 2 ~ ~0.3 ~ 0.7 0.3 0.7 0 25 normal
+particle soul_fire_flame ~ ~ ~ 0.4 0.1 0.4 0 10 normal
 playsound minecraft:entity.horse.step master @a[distance=..15] ~ ~ ~ 1 1
 
 execute if entity @e[distance=..3.5,tag=!onHHorse,type=!minecraft:skeleton_horse,tag=!hitHorse] as @e[distance=..3.5,tag=!onHHorse,type=!minecraft:skeleton_horse,tag=!hitHorse] at @s run function dpm7:pvp/class/harbinger/horse_hit

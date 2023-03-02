@@ -1,0 +1,197 @@
+changelog
+
+v1.0
+- Ported to Minigames_7 1.20
+- Code structure completely re-written and is now more readable
+- Reverted weakness and resistance application to game join due to the new infinite effect setting
+- Rifle and SMG switched to shield internally
+    - Firing these weapons will no longer fire in bursts
+    - Firing these weapons will now slow the player down
+    - SMG slowdown may be fixed in a future update
+- CTs and Ts renamed to 'Defenders' and 'Attackers'
+- Reduced grenade hitbox
+- Greatly optimized grenade bounce calculations
+    - Bounces are now more accurate
+- Increased visibility of thrown grenade arc
+- Slightly changed shot tracer color
+- Minor optimizations
+
+- Can now shoot through the top half of all slabs
+- Added a small amount of base inaccuracy to pistol and rifle
+    - Pistols will no longer be as effective in mid-high ranges
+- Slightly decreased movement speed while using the sniper (now 35% slower compared to base)
+- Greatly increased movement speed while using SMG (now 8% faster compared to base) 
+    - This is to slightly offset the new slowdown
+- Slightly increased shotgun accuracy
+- Increased shotgun headshot damage
+    - Shotgun can now 1 shot at point-blank ranges again, but needs several headshots
+- Reduced smoke beacon arming time (now 1.8 seconds)
+- Reworked HE grenade damage scaling
+    - Damage range is still 8 blocks
+    - Max 94 damage, reduced by 5 for every 0.25 blocks from the origin
+
+v0.14
+- Player hitbox is now more accurate
+- Summoning barriers will now use markers instead of armor stands
+
+- Base movement speed was increased by 30% to compensate for no sprinting
+- Buy time increased to 30 seconds
+- Reduced footstep range
+- You now move significantly less slower when using the shotgun (7% slower compared to base, from 16%) and SMG (3% slower compared to base, from 7%)
+
+- Fixed an issue with nades overwriting other grenades when buying
+
+v0.13
+- Bullets, flash and smoke now use the marker entity internally instead of area_effect_cloud
+    - Will result in a slight server performance increase
+- Weakness and resistance are now applied gradually rather than through game join
+
+- Sprinting is now by default disabled, can be enabled through game settings
+- Molotov particles slightly more accurate and have a heavier smoke
+- HE smoke particles increased in size
+
+- Fixed an issue with player nade count not being correctly tracked
+- Fixed planted bomb not being removed on match end
+
+v0.12
+- Added a map select system
+- Bind was added to the Minigames_6 maps
+- Revamped buy time
+    - Increased buy time duration
+    - You can now move normally during buytime
+    - Barriers at certain points of the map will appear at round start
+    - Barriers will disappear after buy time end
+
+- Fixed buy time interface displaying the incorrect value
+- Fixed an issue where you could shoot while continuing the defuse timer
+
+v0.11
+- Added an option for showing shot tracers only for spectators
+- Added an option for disabling bunnyhops
+
+- Added a summonable dummy for testing guns
+- Shotgun now auto-reloads each bullet and after magazine is empty
+
+- General walking accuracy slightly increased
+- SMG accuracy variance increased
+- Pistol vertical bloom slightly increased
+- Shotgun reworked
+    - Now only fires 6 pellets, has slightly increased damage to compensate
+    - Now has a max magazine of 4 shots
+    - Reload time slightly increased
+    - Cooldown before firing increased to 8 ticks
+    - Bloom increased, effective range is now slightly reduced
+    - Headshot damage significantly increased
+
+v0.10
+- Bullet raycast is now more accurate (should not cause hit detection multiple times)
+- Bullet and flashbang max range increased
+- Can now shoot through the door in A site
+- Can now shoot through the top half of STONE BRICK slabs
+- Shot tracer is now slightly more visible
+- Currently active grenades are now killed on round start
+- Flashbang now behaves more consistently when near walls
+- Reworked grenade sound and particle effects
+
+- Smoke now instantly deploys if the beacon is near a molotov
+- Smoke now blinds players in its radius
+- HE grenade now explodes if it hits a player after a short arming time
+- HE grenade explosion is now weaker at longer distances
+
+- Fixed spectators getting flashed
+- Fixed CT spectators being able to trigger the defuse sound
+
+v0.9
+- Added a custom footstep system
+    - Trigger a sound when:
+        - Walking (after half a second)
+        - Sprinting
+        - Jumping normally
+        - Landing on a block after a certain airtime
+    - No sound is triggered when:
+        - Sneaking
+        - Jumping while sneaking
+- Jumping is now disabled when getting hit by a bullet for a short duration
+- The max number of grenades carried is now limited to 3
+- The bomb for Terrorists is now located at slot 9
+- Added a particle effect and sound when a player dies
+
+- When buying a primary weapon while you have a primary weapon equipped, refund the cost of the equipped weapon
+- When buying a grenade, it is now put into slots 3-5
+- Increased the amount of money gained in round win by 200
+- Cost of armor is now $500 and $1100, respectively
+- Armor now gives +25/50 hp respectively
+- Slightly increased the minimum accuracy of smgs
+- Slightly reduced the damage of molotovs
+- Significantly increased headshot damage
+    - 2 pistol headshots will now kill a player without armor
+    - 2 rifle headshots will now kill a player with heavy armor
+
+- Fixed an issue with the bomb dropped by dead T being immediately picked up by CT when it has just spawned
+- Fixed an issue where shooting the foot with a rifle was using sniper foot values
+
+v0.8
+- Smoke and flash reworked
+    - Smoke is now a beacon that creates a smoke after a short duration
+        - Can cast near a wall to create a smoke through the wall
+    - Flash is now flash charge, target a wall to create a charge through the wall
+        - Flash will explode after a short duration, blinding enemies
+- Added heads-up display for when player is not holding a weapon
+- Reload key is now F instead of a separate item
+- Increased slowdown when tagged
+- Added weakness effect when joining the game
+
+- Smg fire rate buff and damage nerf
+- Shotgun accuracy buff
+- General jumping accuracy greatly nerfed
+- Headshot damage buffed for smg, rifle, pistol
+
+v0.7 
+- Reworked grenade bouncing, is slightly more consistent
+- Added headshot sound
+- Added slowdown when tagged
+- Added sniper scope
+
+- Major accuracy buffs for most weapons
+- Shotgun damage nerf and jumping accuracy nerf
+
+v0.6
+- Added optimized right click detection for automatic weapons through advancements
+- Automatic weapons now use the shield instead of carrot on a stick internally
+- Flashbangs are now more accurate
+
+- Accuracy nerfs to smg, shotgun, sniper
+- Longer reload times for rifle, sniper
+- Slightly increased spray reset timer for rifle
+- Longer cd after each shot and reduced ammo for sniper
+
+v0.5
+- Added shotgun
+- Added smg
+- Added slowness when being hit
+- Changed recoil to every 2 ticks
+
+v0.4
+- Added sniper
+- Added settings menu
+- Fixed rifle spray reset
+- Fixed spawn putting players on roof
+- Optimized ambient code
+- Optimized grenade explosion mechanic and is now more accurate
+
+v0.3
+- Added match system
+- Added armor
+- Buy menu
+- Bug fixes
+
+v0.2
+- Added pistol
+- Added start mechanic
+- Added bombsite
+- Bug fixes
+
+v0.1
+- Added rifle
+- Added grenades
+- Added round system

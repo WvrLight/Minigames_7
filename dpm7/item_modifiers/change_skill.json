@@ -7,7 +7,7 @@
         "condition": "minecraft:entity_scores",
         "entity": "this",
         "scores": {
-          "skillId": 0
+          "rightClickId": 0
         }
       }
     ]
@@ -20,7 +20,7 @@
         "condition": "minecraft:entity_scores",
         "entity": "this",
         "scores": {
-          "skillId": 1
+          "rightClickId": 1
         }
       }
     ]
@@ -33,7 +33,7 @@
         "condition": "minecraft:entity_scores",
         "entity": "this",
         "scores": {
-          "skillId": 2
+          "rightClickId": 2
         }
       }
     ]
@@ -46,7 +46,46 @@
         "condition": "minecraft:entity_scores",
         "entity": "this",
         "scores": {
-          "skillId": 3
+          "rightClickId": 3
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{horse:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "rightClickId": 4
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{arrow_rain:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "rightClickId": 4
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{net:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "rightClickId": 4
         }
       }
     ]

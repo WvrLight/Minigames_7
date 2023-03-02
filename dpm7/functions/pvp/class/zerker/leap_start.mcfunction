@@ -1,6 +1,6 @@
-# Skill cooldown details
+# rightClick cooldown details
 scoreboard players set @s cooldown 4
-scoreboard players set @s skillId 1
+scoreboard players set @s rightClickId 1
 clear @s carrot_on_a_stick{leap:1}
 execute at @s run function dpm7:pvp/modules/cooldown_dummy
 
@@ -12,7 +12,7 @@ tag @e[tag=newDummy] add leapDummy
 tag @e[tag=newDummy] add onTimer
 tag @s add onLeap
 
-# Skill interactions
+# rightClick interactions
 execute as @s[tag=onSlamStart] run tag @s add onSlam
 execute as @s[tag=onSlamStart] run tag @s remove onSlamStart
 execute as @s[tag=onFlurryChannel] run effect clear @s slowness

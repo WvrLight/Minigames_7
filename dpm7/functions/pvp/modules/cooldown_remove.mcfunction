@@ -3,7 +3,7 @@
 # Store temp id
 scoreboard players operation #temp id = @s id
 scoreboard players operation #temp slot = @s slot
-scoreboard players operation #temp skillId = @s skillId
+scoreboard players operation #temp rightClickId = @s rightClickId
 
 # Slot detection
 execute if score @s slot matches 0 as @a if score @s id = #temp id run clear @s black_stained_glass_pane{cooldown:1} 1
@@ -22,4 +22,4 @@ execute if score @s cooldown matches ..0 as @a if score @s id = #temp id run fun
 execute if score @s cooldown matches ..0 run kill @s
 
 scoreboard players reset #temp id
-scoreboard players reset #temp skillId
+scoreboard players reset #temp rightClickId

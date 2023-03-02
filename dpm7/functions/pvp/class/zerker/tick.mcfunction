@@ -1,4 +1,4 @@
-# Skill activations
+# rightClick activations
 execute as @a[scores={rightClick=1..},nbt={SelectedItem:{tag:{flurry:1}}}] at @s run function dpm7:pvp/class/zerker/flurry_start
 execute as @a[scores={rightClick=1..},nbt={SelectedItem:{tag:{slam:1}}}] at @s run function dpm7:pvp/class/zerker/slam_check
 execute as @a[scores={rightClick=1..},nbt={SelectedItem:{tag:{leap:1}}}] at @s run function dpm7:pvp/class/zerker/leap_start

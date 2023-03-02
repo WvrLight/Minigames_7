@@ -1,0 +1,2 @@
+execute if entity @s[distance=0.75..] store result score @s DMGroll run loot give @s loot dpm7:pixelstrike/sniper
+execute if entity @s[distance=..0.75] store result score @s DMGroll run loot give @s loot dpm7:pixelstrike/sniper_foot

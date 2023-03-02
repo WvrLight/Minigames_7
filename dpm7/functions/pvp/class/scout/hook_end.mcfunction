@@ -9,7 +9,7 @@ execute as @e[tag=hookDummy] if score @s id = #temp id run kill @s
 scoreboard players reset #temp id
 
 # Restore dummy motion
-ride @s mount @e[tag=motionDummy,limit=1,sort=nearest]
+#ride @s mount @e[tag=motionDummy,limit=1,sort=nearest]
 execute as @e[tag=motionDummy,limit=1,sort=nearest] run function dpm7:pvp/class/scout/hook_end_motion
 
 tag @s remove onHook

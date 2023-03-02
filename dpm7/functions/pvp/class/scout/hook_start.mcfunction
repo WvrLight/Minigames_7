@@ -1,8 +1,8 @@
 # Used when hook_check is successful
 
-# Skill cooldown details
+# rightClick cooldown details
 scoreboard players set @s cooldown 4
-scoreboard players set @s skillId 0
+scoreboard players set @s rightClickId 0
 clear @s carrot_on_a_stick{hook:1}
 execute at @s run function dpm7:pvp/modules/cooldown_dummy
 

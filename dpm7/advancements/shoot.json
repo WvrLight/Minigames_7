@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+       "items": ["minecraft:ender_eye"],
+       "tag": "auto:1"
+      }
+    }
+  },
+  "rewards": {
+    "function": "dpm7:pixelstrike/weapon/shoot/shoot_new"
+  }
+}

@@ -8,5 +8,5 @@ summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Small:1b,Invisible:1b,Tags:[
 scoreboard players operation @e[tag=newDummy] id = @s id
 
 # IMPORTANT
-# AFTER YOUR SKILL INITIALIZATIONS, ADD THIS LINE TO THE SKILL FUNCTION WHEN YOU'RE DONE EDITING THE DUMMY
+# AFTER YOUR rightClick INITIALIZATIONS, ADD THIS LINE TO THE rightClick FUNCTION WHEN YOU'RE DONE EDITING THE DUMMY
 #tag @e[tag=newDummy] remove newDummy

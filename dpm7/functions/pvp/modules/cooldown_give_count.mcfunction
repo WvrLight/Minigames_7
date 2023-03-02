@@ -1,4 +1,4 @@
- # Recursive function to apply correct cooldown numbers after skill usage
+ # Recursive function to apply correct cooldown numbers after rightClick usage
 scoreboard players remove @s cooldown 1
 
 execute if score @s slot matches 0 run item modify entity @s hotbar.0 dpm7:increment_item
