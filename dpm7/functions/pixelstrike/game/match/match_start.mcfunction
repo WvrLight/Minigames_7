@@ -18,14 +18,15 @@ scoreboard players set Attackers: psMain 0
 
 # ECONOMY VARIABLES
 clear @a[tag=psPlaying]
+scoreboard players set @a[tag=psPlaying] psHealth 100
 scoreboard players set @a[tag=psPlaying] psMoney 800
 scoreboard players set @a[tag=psPlaying] psNadeMax 0
 scoreboard players set @a[tag=psPlaying] pistolR 0
 scoreboard players set @a[tag=psPlaying] psStamina 0
-scoreboard players set loss psMoney 800
-scoreboard players set win psMoney 1500
+scoreboard players set loss psMoney 1350
+scoreboard players set win psMoney 2100
 scoreboard players set max psMoney 12000
-scoreboard players set default psLossBonus 450
+scoreboard players set default psLossBonus 550
 scoreboard players set CT psLossStreak 0
 scoreboard players set T psLossStreak 0
 

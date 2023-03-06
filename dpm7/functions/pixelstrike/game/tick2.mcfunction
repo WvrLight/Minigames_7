@@ -30,7 +30,7 @@ execute as @a[scores={sprayR=1}] run scoreboard players set @s firinghold2 1
 execute as @a[scores={sprayR=1..}] run scoreboard players remove @s sprayR 1
 
 #SNIPER
-execute as @a[nbt={SelectedItem:{tag:{sniper:1}}},scores={psSneak=1..,sniperR=0}] run function dpm7:pixelstrike/weapon/sniper_zoom
+execute as @a[nbt={SelectedItem:{tag:{sniper:1}}},scores={psSneak=1..,sniperR=0,psReload=0}] run function dpm7:pixelstrike/weapon/sniper_zoom
 execute as @a[scores={psZoom=1..,psSneak=0}] run function dpm7:pixelstrike/game/psa_sniper_zoom
 
 execute as @a[scores={sniperR=1..}] run scoreboard players remove @s sniperR 1

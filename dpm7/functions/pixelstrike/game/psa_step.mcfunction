@@ -21,7 +21,7 @@ execute as @s[scores={psStep=..11}] if score @s IAwalk matches 0 run scoreboard 
 #End of jump
 execute as @s[scores={psStep=19..}] if entity @s[gamemode=!spectator,nbt={OnGround:1b}] if score @s psStep matches 30.. at @s run playsound minecraft:block.stone.fall master @a ~ ~ ~ 1 0
 execute if score bhopEnabled psDummy matches 0 as @s[scores={psStep=19..}] if entity @s[gamemode=!spectator,nbt={OnGround:1b}] if score @s psStep matches 27.. run effect give @s jump_boost 1 137 true
-execute if score bhopEnabled psDummy matches 0 as @s[scores={psStep=19..}] if entity @s[gamemode=!spectator,nbt={OnGround:1b}] if score @s psStep matches 27.. run effect give @s slowness 1 3 true
+#execute if score bhopEnabled psDummy matches 0 as @s[scores={psStep=19..}] if entity @s[gamemode=!spectator,nbt={OnGround:1b}] if score @s psStep matches 27.. run effect give @s slowness 1 3 true
 execute as @s[scores={psStep=19..}] run scoreboard players add @s psStep 2
 execute as @s[scores={psStep=19..}] if entity @s[gamemode=!spectator,nbt={OnGround:1b}] run scoreboard players set @s psStep 0
 

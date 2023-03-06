@@ -6,8 +6,8 @@ function dpm7:pixelstrike/item/give_shotgun
 tellraw @s [{"text":"Purchased","color":"yellow","bold":true},{"text":" [Shotgun]","color":"dark_purple"}]
 scoreboard players remove @s psMoney 1900
 
-scoreboard players set @s psAmmo 4
-scoreboard players set @s psAmmoMax 4
+scoreboard players set @s psAmmo 6
+scoreboard players set @s psAmmoMax 6
 
 scoreboard players set @s shotgun 0
 scoreboard players set @s shotgunR 0

@@ -5,8 +5,7 @@ tag @s add self
 tag @p[tag=!self,gamemode=!spectator,distance=..3] add psHit
 tag @s remove self
 
-#execute at @e[tag=psHit] run summon area_effect_cloud ~ ~2 ~ {Age:2147483647,Tags:["hitdummy"]}
-
+#Roll damage
 execute if entity @s[nbt={SelectedItem:{tag:{rifle:1}}}] as @p[tag=psHit,distance=..3] run function dpm7:pixelstrike/weapon/shoot/damage/dmg_rifle
 execute if entity @s[nbt={SelectedItem:{tag:{sniper:1}}}] as @p[tag=psHit,distance=..3] run function dpm7:pixelstrike/weapon/shoot/damage/dmg_sniper
 execute if entity @s[nbt={SelectedItem:{tag:{shotgun:1}}}] as @p[tag=psHit,distance=..3] run function dpm7:pixelstrike/weapon/shoot/damage/dmg_shotgun
@@ -15,7 +14,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{secondary:1}}}] as @p[tag=psHit,dis
 
 #Remove health from target
 execute as @p[tag=psHit,distance=..3] run scoreboard players operation @s psHealth -= @s DMGroll
-effect give @p[tag=psHit,distance=..3] slowness 1 5 true
+effect give @p[tag=psHit,distance=..3] slowness 1 3 true
 effect give @p[tag=psHit,distance=..3] jump_boost 1 128 true
 scoreboard players reset @p[tag=psHit,distance=..3] DMGroll
 
@@ -31,7 +30,4 @@ execute if entity @p[tag=psHit,distance=..3,scores={psHealth=..0}] run tellraw @
 execute if entity @p[tag=psHit,distance=..3,scores={psHealth=..0}] as @p[tag=psHit,distance=..3,scores={psHealth=..0}] run function dpm7:pixelstrike/game/death
 
 clear @p[tag=psHit,distance=..3] stone
-#execute if entity @s[nbt={SelectedItem:{tag:{shotgun:1}}}] run tag @p[tag=psHit] remove psHit
-#tag @e[tag=psHit] remove psHit
 tag @p[tag=psHit,distance=..3] remove psHit
-#kill @e[tag=hitdummy]

@@ -82,12 +82,12 @@ scoreboard objectives add psStep dummy
 #scoreboard objectives add psJump minecraft.custom:minecraft.jump
 
 #TEAM
-team add psCT "Counter-Terrorists"
+team add psCT "Defenders"
 team modify psCT color blue
 team modify psCT nametagVisibility hideForOtherTeams
 team modify psCT deathMessageVisibility never
 
-team add psT "Terrorists"
+team add psT "Attackers"
 team modify psT color gold
 team modify psT nametagVisibility hideForOtherTeams
 team modify psT deathMessageVisibility never

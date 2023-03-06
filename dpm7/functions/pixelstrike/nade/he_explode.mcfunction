@@ -7,6 +7,6 @@ tp @s ~ -100 ~
 kill @s
 
 summon marker ~ ~0.5 ~ {CustomName:'{"text":"psHEdummy"}'}
-execute at @e[name=psHEdummy] as @a[distance=..8] run function dpm7:pixelstrike/nade/he_check
+execute at @e[name=psHEdummy] as @a[tag=psPlaying,distance=..8,gamemode=!spectator] run function dpm7:pixelstrike/nade/he_check
 
 kill @e[name=psHEdummy]

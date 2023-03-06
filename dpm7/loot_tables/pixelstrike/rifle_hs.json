@@ -1,1 +1,1 @@
-{"pools":[{"rolls":{"min":75,"max":79},"entries":[{"type":"item","name":"minecraft:stone","weight":1,"functions":[{"function":"set_count","count":1}]}]}]}
+{"pools":[{"rolls":{"min":65,"max":69},"entries":[{"type":"item","name":"minecraft:stone","weight":1,"functions":[{"function":"set_count","count":1}]}]}]}

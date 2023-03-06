@@ -13,7 +13,7 @@ scoreboard players operation @s shotY *= @s pistol
 
 #Inaccuracy
 execute as @s run function dpm7:pixelstrike/weapon/acc/ia_roll_movement
-scoreboard players operation @s IAroll += #7 integers
+scoreboard players operation @s IAroll += #5 integers
 execute if score sign IAroll matches 1 run scoreboard players operation @s shotX += @s IAroll
 execute if score sign IAroll matches 2 run scoreboard players operation @s shotX -= @s IAroll
 

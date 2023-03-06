@@ -1,5 +1,17 @@
 changelog
 
+v1.1
+- Reduced slowdown when tagged to Slowness 3 (from Slowness 5)
+- Slightly increased shotgun accuracy
+- Shotgun ammo cap increased to 6 (from 4)
+- Reduced rifle bodyshot damage to 22-26 (from 24-29)
+- Reduced rifle headshot damage to 65-69 (from 75-79)
+    - It now takes at least 3 headshots to kill a player
+
+- Minor optimizations
+- Fixed an issue where ammo count was not being reset at round start
+- Fixed an issue where the round timer would tick after bomb plant
+
 v1.0
 - Ported to Minigames_7 1.20
 - Code structure completely re-written and is now more readable
@@ -17,11 +29,16 @@ v1.0
 - Minor optimizations
 
 - Can now shoot through the top half of all slabs
+- Changed round economy
+    - Round win reward is now $2100 (from $2400)
+    - Round loss reward is now $1350 (from $1500)
+    - Loss bonus is now $550 (from $450)
 - Added a small amount of base inaccuracy to pistol and rifle
     - Pistols will no longer be as effective in mid-high ranges
 - Slightly decreased movement speed while using the sniper (now 35% slower compared to base)
 - Greatly increased movement speed while using SMG (now 8% faster compared to base) 
     - This is to slightly offset the new slowdown
+- Increased number of shotgun bullets to 8 (from 6)
 - Slightly increased shotgun accuracy
 - Increased shotgun headshot damage
     - Shotgun can now 1 shot at point-blank ranges again, but needs several headshots

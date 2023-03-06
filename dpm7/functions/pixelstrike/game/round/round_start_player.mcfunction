@@ -1,6 +1,6 @@
 execute at @s run summon marker ~ ~ ~ {Tags:["psSpawnTP"]}
-execute if entity @s[team=psCT] as @e[tag=psSpawnTP] run data modify entity @s Pos[1] set from entity @e[tag=psCTspawn,limit=1] Pos[1]
-execute if entity @s[team=psT] as @e[tag=psSpawnTP] run data modify entity @s Pos[1] set from entity @e[tag=psTspawn,limit=1] Pos[1]
+execute if entity @s[team=psCT] as @e[tag=psSpawnTP,limit=1,sort=nearest] run data modify entity @s Pos[1] set from entity @e[tag=psCTspawn,limit=1,sort=nearest] Pos[1]
+execute if entity @s[team=psT] as @e[tag=psSpawnTP,limit=1,sort=nearest] run data modify entity @s Pos[1] set from entity @e[tag=psTspawn,limit=1,sort=nearest] Pos[1]
 tp @s @e[tag=psSpawnTP,limit=1]
 kill @e[tag=psSpawnTP]
 
@@ -30,8 +30,9 @@ execute if entity @s[nbt={Inventory:[{Slot:2b}]}] run scoreboard players add @s 
 execute if entity @s[nbt={Inventory:[{Slot:3b}]}] run scoreboard players add @s psNadeMax 1
 execute if entity @s[nbt={Inventory:[{Slot:4b}]}] run scoreboard players add @s psNadeMax 1
 execute if entity @s[nbt={Inventory:[{Slot:5b}]}] run scoreboard players add @s psNadeMax 1
-execute as @s run function dpm7:pixelstrike/weapon/reload/reload_pistol_end
-execute as @s if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{shotgun:1}}]}] run scoreboard players set @s psAmmo 8
+function dpm7:pixelstrike/weapon/reload/reload_primary_end
+function dpm7:pixelstrike/weapon/reload/reload_pistol_end
+execute if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{shotgun:1}}]}] run scoreboard players set @s psAmmo 8
 
 #effect give @s slowness 15 137 true
 #effect give @s jump_boost 15 137 true
