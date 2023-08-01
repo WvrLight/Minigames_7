@@ -28,6 +28,6 @@ summon text_display -7 70 -28 {Tags:["spawnText","infoText","versionMessageLabel
 summon text_display -7 68 -28 {line_width:300,alignment:"left",Tags:["spawnText","infoText","versionMessage"],text:'[{"text":"Conjurer Clash and PixelStrike ported to M_7!","color":"green","bold":true},{"text":"\\n\\nThe M_6 favorites are back! Conjurer Clash arena is under construction, and planning for the PixelStrike and Arena map are underway.\\n\\nStay tuned for a new sports minigame concept :)","color":"white","bold":false}]',background:0}
 
 # b1
-summon text_display -7 68 -28 {alignment:"left",line_width:300,Tags:["spawnText","infoText","versionMessage"],text:'[{"text":"M_7 is here! First version, and first message!","color":"green","bold":true},{"text":"\\n\\nArena (formerly PvP) construction is fully underway, as is tradition. Of course, classic minigames to come once we\'re done playing around with the new 1.20 tools.\\n\\nAlso, we have an actual spawn now :O","color":"white","bold":false}]',background:0}
+#summon text_display -7 68 -28 {alignment:"left",line_width:300,Tags:["spawnText","infoText","versionMessage"],text:'[{"text":"M_7 is here! First version, and first message!","color":"green","bold":true},{"text":"\\n\\nArena (formerly PvP) construction is fully underway, as is tradition. Of course, classic minigames to come once we\'re done playing around with the new 1.20 tools.\\n\\nAlso, we have an actual spawn now :O","color":"white","bold":false}]',background:0}
 
 execute as @e[tag=infoText] at @s run tp @s ~ ~ ~ -90 0

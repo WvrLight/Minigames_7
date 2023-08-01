@@ -22,14 +22,14 @@ kill @e[tag=direction,limit=1,sort=nearest]
 summon rabbit ~ ~-100 ~ {Silent:1b,Invulnerable:1b,CustomNameVisible:0b,Age:-1000,CustomName:'{"text":"psNade"}',Tags:["new"],ActiveEffects:[{Id:14,Amplifier:1b,Duration:1000,ShowParticles:0b}]}
 #execute anchored eyes run summon armor_stand ^ ^ ^0.5 {Invisible:1b,Invulnerable:1b,Small:1b,CustomName:'{"text":"psNade"}'}
 #data modify entity @e[name=psNade,tag=new] Position set from entity @s Position
-data modify entity @e[name=psNade,tag=new,limit=1,sort=nearest] Rotation set from entity @s Rotation
 execute at @s anchored eyes run tp @e[name=psNade,tag=new] ^ ^ ^0.5
+data modify entity @e[name=psNade,tag=new,limit=1,sort=nearest] Rotation set from entity @s Rotation
 playsound minecraft:entity.snowball.throw master @a ~ ~ ~ 0.5 0.5
 #scoreboard players set @e[type=armor_stand,name=psNade,limit=1,sort=nearest] psBounceH 0
 #tag @e[type=armor_stand,name=psNade,limit=1,sort=nearest] add bounce
-execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[0] double -0.015 run scoreboard players get @p posX
-execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[1] double -0.011 run scoreboard players get @p posY
-execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[2] double -0.015 run scoreboard players get @p posZ
+execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[0] double -0.025 run scoreboard players get @p posX
+execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[1] double -0.015 run scoreboard players get @p posY
+execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[2] double -0.025 run scoreboard players get @p posZ
 
 #Remove grenade from player
 execute if score @s psNadeMax matches 1.. run scoreboard players remove @s psNadeMax 1

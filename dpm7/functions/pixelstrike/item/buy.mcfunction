@@ -1,12 +1,14 @@
+#This is where all shop values should be based on
+
 #PRIMARY
 execute if entity @s[scores={psPurchase=1,psMoney=2800..}] run function dpm7:pixelstrike/item/buy_rifle
 execute if entity @s[scores={psPurchase=2,psMoney=4850..}] run function dpm7:pixelstrike/item/buy_sniper
-execute if entity @s[scores={psPurchase=3,psMoney=1900..}] run function dpm7:pixelstrike/item/buy_shotgun
-execute if entity @s[scores={psPurchase=4,psMoney=1650..}] run function dpm7:pixelstrike/item/buy_smg
+execute if entity @s[scores={psPurchase=3,psMoney=1800..}] run function dpm7:pixelstrike/item/buy_shotgun
+execute if entity @s[scores={psPurchase=4,psMoney=1450..}] run function dpm7:pixelstrike/item/buy_smg
 
 #ARMOR
-execute if entity @s[scores={psPurchase=10,psMoney=500..,psHealth=..119}] run function dpm7:pixelstrike/item/buy_armor_light
-execute if entity @s[scores={psPurchase=11,psMoney=1100..,psHealth=..139}] run function dpm7:pixelstrike/item/buy_armor_heavy
+execute if entity @s[scores={psPurchase=10,psMoney=500..,psHealth=..124}] run function dpm7:pixelstrike/item/buy_armor_light
+execute if entity @s[scores={psPurchase=11,psMoney=1100..,psHealth=..149}] run function dpm7:pixelstrike/item/buy_armor_heavy
 
 #GRENADES
 execute if entity @s[scores={psPurchase=20,psMoney=300..,psNadeMax=..2}] run function dpm7:pixelstrike/item/buy_g_smoke

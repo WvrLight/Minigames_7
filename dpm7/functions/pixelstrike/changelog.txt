@@ -1,20 +1,30 @@
 changelog
 
-v1.1
+v1.1 (07/03/2023)
+- Minor optimizations
+- A less visible shot tracer appears on every shot that can be seen by all players
+    - This is for determining shot direction from other players while maintaining visibility
+
 - Reduced slowdown when tagged to Slowness 3 (from Slowness 5)
+- SMG cost reduced to $1450 (from $1650)
+- Shotgun cost reduced to $1800 (from $1900)
+- Slightly increased pistol minimum accuracy
 - Slightly increased shotgun accuracy
 - Shotgun ammo cap increased to 6 (from 4)
 - Reduced rifle bodyshot damage to 22-26 (from 24-29)
 - Reduced rifle headshot damage to 65-69 (from 75-79)
-    - It now takes at least 3 headshots to kill a player
+    - It now takes at least 3 headshots to kill a player with heavy armor (still 2 with light armor)
+- Increased velocity of grenade throws
+- Increased range for using Flash Charge and Smoke Beacon
 
-- Minor optimizations
 - Fixed an issue where ammo count was not being reset at round start
 - Fixed an issue where the round timer would tick after bomb plant
+- Fixed barriers not properly using the current map setting on creation
 
-v1.0
+v1.0 (03/03/2023)
 - Ported to Minigames_7 1.20
 - Code structure completely re-written and is now more readable
+
 - Reverted weakness and resistance application to game join due to the new infinite effect setting
 - Rifle and SMG switched to shield internally
     - Firing these weapons will no longer fire in bursts
@@ -27,8 +37,8 @@ v1.0
 - Increased visibility of thrown grenade arc
 - Slightly changed shot tracer color
 - Minor optimizations
-
 - Can now shoot through the top half of all slabs
+
 - Changed round economy
     - Round win reward is now $2100 (from $2400)
     - Round loss reward is now $1350 (from $1500)
@@ -158,7 +168,7 @@ v0.8
 - Increased slowdown when tagged
 - Added weakness effect when joining the game
 
-- Smg fire rate buff and damage nerf
+- SMG fire rate buff and damage nerf
 - Shotgun accuracy buff
 - General jumping accuracy greatly nerfed
 - Headshot damage buffed for smg, rifle, pistol
