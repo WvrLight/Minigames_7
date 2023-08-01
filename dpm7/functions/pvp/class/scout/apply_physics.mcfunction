@@ -27,7 +27,6 @@ scoreboard players operation @s motionX += #temp posX
 scoreboard players operation @s motionY += #temp posY
 scoreboard players operation @s motionZ += #temp posZ
 
-tag @e[tag=targetHook] remove targetHook
 
 # Apply additional gravity force
 scoreboard players operation @s motionY -= #gravity motionY
@@ -42,8 +41,9 @@ execute store result entity @s Motion[2] double 0.000105 run scoreboard players 
 
 # Raycast visual effect
 scoreboard players set @s raycast 0
-execute at @s anchored eyes facing entity @e[tag=hookDummy] feet positioned ^ ^ ^1 run function dpm7:pvp/class/scout/hook_raycast
+execute at @s anchored eyes facing entity @e[tag=hookDummy,tag=targetHook] feet positioned ^ ^ ^1 run function dpm7:pvp/class/scout/hook_raycast
 
+tag @e[tag=targetHook] remove targetHook
 scoreboard players reset #temp posX
 scoreboard players reset #temp posY
 scoreboard players reset #temp posZ

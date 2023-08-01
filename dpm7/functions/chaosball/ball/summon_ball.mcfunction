@@ -1,0 +1,2 @@
+summon rabbit ~ ~-100 ~ {Silent:1b,Invulnerable:1b,CustomNameVisible:0b,Age:-1000,Tags:["new","ball"],ActiveEffects:[{Id:14,Amplifier:1b,Duration:1000,ShowParticles:0b}]}
+execute at @s anchored eyes run tp @e[tag=ball,tag=new] ^ ^ ^0.5

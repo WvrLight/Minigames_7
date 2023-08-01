@@ -8,7 +8,7 @@ scoreboard objectives add slot dummy
 scoreboard objectives add cooldown dummy
 
 # Enable tick functions
-scoreboard players set #class tick 1
+scoreboard players set pvp tick 1
 
 function dpm7:pvp/modules/global_tick
 schedule function dpm7:pvp/modules/global_tick2 1t

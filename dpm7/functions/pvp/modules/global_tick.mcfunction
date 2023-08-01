@@ -12,4 +12,4 @@ function dpm7:pvp/class/harbinger/tick
 # Reset rightClick
 execute as @a[scores={rightClick=0..}] run scoreboard players reset @s rightClick
 
-execute if score #class tick matches 1 run schedule function dpm7:pvp/modules/global_tick 1t
+execute if score pvp tick matches 1 run schedule function dpm7:pvp/modules/global_tick 1t

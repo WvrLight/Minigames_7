@@ -27,9 +27,9 @@ data modify entity @e[name=psNade,tag=new,limit=1,sort=nearest] Rotation set fro
 playsound minecraft:entity.snowball.throw master @a ~ ~ ~ 0.5 0.5
 #scoreboard players set @e[type=armor_stand,name=psNade,limit=1,sort=nearest] psBounceH 0
 #tag @e[type=armor_stand,name=psNade,limit=1,sort=nearest] add bounce
-execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[0] double -0.025 run scoreboard players get @p posX
-execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[1] double -0.015 run scoreboard players get @p posY
-execute as @e[name=psNade,tag=new] at @s run execute store result entity @s Motion[2] double -0.025 run scoreboard players get @p posZ
+execute as @e[name=psNade,tag=new] store result entity @s Motion[0] double -0.025 run scoreboard players get @p posX
+execute as @e[name=psNade,tag=new] store result entity @s Motion[1] double -0.015 run scoreboard players get @p posY
+execute as @e[name=psNade,tag=new] store result entity @s Motion[2] double -0.025 run scoreboard players get @p posZ
 
 #Remove grenade from player
 execute if score @s psNadeMax matches 1.. run scoreboard players remove @s psNadeMax 1

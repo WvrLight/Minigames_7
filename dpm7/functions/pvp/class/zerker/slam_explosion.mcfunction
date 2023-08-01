@@ -2,11 +2,11 @@
 scoreboard players operation #temp id = @s id
 
 # Damage
-execute at @s as @e[tag=!onSlam, distance=..1] run damage @s 6 player_attack by @p[tag=onSlam]
-execute at @s as @e[tag=!onSlam, distance=1..4] run damage @s 3 player_attack by @p[tag=onSlam]
-execute at @s as @e[tag=!onSlam, distance=..4] run effect give @s slowness 2 5 true
-execute at @s as @e[tag=!onSlam, distance=4..8] run damage @s 1 player_attack by @p[tag=onSlam]
-execute at @s as @e[tag=!onSlam, distance=4..8] run effect give @s slowness 2 2 true
+execute at @s as @e[tag=!onSlam, distance=..1, type=player] run damage @s 6 player_attack by @p[tag=onSlam]
+execute at @s as @e[tag=!onSlam, distance=1..4, type=player] run damage @s 3 player_attack by @p[tag=onSlam]
+execute at @s as @e[tag=!onSlam, distance=..4, type=player] run effect give @s slowness 2 5 true
+execute at @s as @e[tag=!onSlam, distance=4..8, type=player] run damage @s 1 player_attack by @p[tag=onSlam]
+execute at @s as @e[tag=!onSlam, distance=4..8, type=player] run effect give @s slowness 2 2 true
 
 # Effects
 execute positioned as @s rotated 0 0 run function dpm7:pvp/class/zerker/slam_explosion_circle
